@@ -1,1 +1,14 @@
-{style
+body{ background-color: #e5e4e2 ;
+
+
+}
+
+
+
+.retangulo {
+    width: 100%px; 
+    height: 180px; 
+    background-color: rgb(80, 80, 80); 
+}
+
+
