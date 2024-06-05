@@ -8,11 +8,11 @@ body{ background-color: #e5e4e2 ;
 .retangulo {
     width: 100%px; 
     height: 180px; 
-    background-color: #c4a96c (80, 80, 80); 
+    background-color: rgb(80, 80, 80); 
 }
 button {
-    background-color: ;
-font-family: arial black; color:white;
+    background-color: #c4a96c 
+   font-family: arial black; color:white ;
 
 }
 
