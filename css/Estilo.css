@@ -11,7 +11,7 @@ body{ background-color: #e5e4e2 ;
     background-color: rgb(80, 80, 80); 
 }
 button {
-    background-color: yellow;
+    background-color: #c4a96c;
     color: white;
     padding:16px 20px;
     border: none;
@@ -20,14 +20,5 @@ button {
     font-size: 16px;
 }
 
-.botao-amarelo {
-    background-color: yellow;
-    color: white;
-    padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
-    border: none; /* Para remover a borda padrão do botão */
-    border-radius: 5px; /* Para adicionar cantos arredondados */
-    cursor: pointer; /* Para mostrar um cursor ao passar o mouse */
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
-}
 
 
