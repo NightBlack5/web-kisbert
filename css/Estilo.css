@@ -11,8 +11,10 @@ body{ background-color: #e5e4e2 ;
     background-color: rgb(80, 80, 80); 
 }
 button {
-    background-color: #c4a96c 
+    background-color: #c4a96c;
     color: white;
     padding:16px 20px;
+    border: none;
+
 }
 
