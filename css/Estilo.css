@@ -3,17 +3,18 @@ body {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
- 
-    
 }
-
+.figure {
+    margin:10px
+}
 
 
 .retangulo {
-    width: 100%px; 
+    width: 100%; 
     height: 180px; 
-    background-color: black (80, 80, 80); 
+    background-color: rgb(69, 69, 69); 
 }
+
 button {
     background-color: black;
     color: white;
