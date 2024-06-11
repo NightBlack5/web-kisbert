@@ -62,6 +62,9 @@ button {
     background: white;
     height: 11vh;
     width: 130vh;
+    border-radius: 50px;
+    border-color: black;
+    border: 5px solid #caa862;
 }
 .nav2{
     display: flex;
