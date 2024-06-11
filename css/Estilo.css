@@ -63,3 +63,12 @@ button {
     height: 11vh;
     width: 130vh;
 }
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    height: 15vh;
+    
+}
