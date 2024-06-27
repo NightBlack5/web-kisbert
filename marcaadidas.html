@@ -9,56 +9,56 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-color: #000;
+        color: #fff;
     }
     .container {
         max-width: 1200px;
         margin: 20px auto;
         padding: 20px;
-        background-color: #fff;
+        background-color: #333;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     h1 {
         text-align: center;
-        color: #333;
+        color: #fff;
     }
-    .search-container {
+    .header {
         display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
     }
-    .search-box {
-        position: relative;
-        width: 100%;
-        max-width: 400px;
+    .logo img {
+        width: 100px;
     }
-    .search-box input[type="text"] {
-        width: 100%;
-        padding: 10px 40px 10px 10px;
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+    .search-bar input {
+        width: 300px;
+        padding: 10px;
         font-size: 16px;
-        border: 2px solid #daa520;
-        border-radius: 25px;
-        box-sizing: border-box;
+        border: 2px solid gold;
+        border-radius: 4px 0 0 4px;
+        outline: none;
     }
-    .search-box button {
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        bottom: 5px;
-        background: transparent;
-        border: none;
+    .search-bar button {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid gold;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        background-color: gold;
         cursor: pointer;
-    }
-    .search-box button img {
-        width: 20px;
-        height: 20px;
     }
     .category {
         margin-bottom: 40px;
     }
     .category h2 {
-        color: #555;
+        color: #fff;
         border-bottom: 2px solid #ddd;
         padding-bottom: 10px;
         text-align: center;
@@ -73,7 +73,7 @@
         box-sizing: border-box;
         padding: 10px;
         margin: 10px;
-        background-color: #f9f9f9;
+        background-color: #444;
         border-radius: 8px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -84,12 +84,12 @@
     }
     .item-name {
         font-size: 18px;
-        color: #333;
+        color: #fff;
         margin: 10px 0;
     }
     .item-price {
         font-size: 16px;
-        color: #888;
+        color: #ccc;
         margin: 5px 0;
     }
     .item-size {
@@ -116,16 +116,19 @@
 </head>
 <body>
 <div class="container">
-    <h1>Loja de Roupas</h1>
-
-    <div class="search-container">
-        <div class="search-box">
-            <input type="text" placeholder="Buscar produtos...">
-            <button type="submit">
-                <img src="lupa.png" alt="Buscar">
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button onclick="searchItems()">
+                <img src="lupa.png" alt="Lupa" style="width: 20px; height: 20px;">
             </button>
         </div>
     </div>
+    
+    <h1>Loja de Roupas</h1>
 
     <div class="category">
         <h2>Camisetas</h2>
@@ -251,11 +254,4 @@
                         <option>41</option>
                         <option>42</option>
                     </select>
-                </div>
-                <button class="buy-button">Comprar</button>
-            </div>
-            <div class="item">
-                <img src="tenis2.jpg" alt="Tênis Esportivo">
-                <div class="item
-
-                
+               
