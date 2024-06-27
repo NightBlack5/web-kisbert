@@ -1,46 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kisbert Store</title>
-    <link rel="stylesheet" href="./css/Estilo.css" >
-    
-</head>
-<center>
-<body>
- <main></main>
+    <link rel="stylesheet" href="./css/Estilo.css">
 
+    <style>
+        /* Estilos opcionais para o carrossel */
+        ..carousel {
+            width: 600px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .carousel-controls button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
     <header>
-<ul class="nav">
-    <a class="logo" href="index.html"><img src="/img/Logokisbert.jpeg" height="170px" width="170spx"></a>
-    <li><a href="homens.html" class="figure1"><button>Homens</button> </a></li>
-        <li><a href="mulheres.html"class="figure1"><button>Mulheres</button></a></li>
-        <li><a href="Infantil.html"class="figure1"><button>Infantil</button> </a></li>
-    <li><img src="./img/carrinho-cortado.png" class="figure" widht="90" height="90"></li>
-    <li><img src="./img/usuario 1 foto.png" class="figure" widht="90" height="90"></li>
-</ul>
-</header>
-<p></p>
-<img src="./img/img roupas/bannerdesconto.jpg" class="figure" widht="700" height="700">
-<ul class="nav1">
-<a href="teste.html"><img src="./img/adidasLogo.png" class="figure" widht="75" height="75"></a>
-<img src="./img/pumaLogo.png" class="figure" widht="75" height="75">
-<img src="./img/reservalogo.png" class="figure" widht="75" height="75">
-<img src="./img/nikelogo.png" class="figure" widht="75" height="75">
-<img src="./img/lacostelogo.png" class="figure" widht="75" height="75">
-<img src="./img/filalogo.png" class="figure" widht="75" height="75">
-</ul>
-<footer>  
-    <a href="sobrenos2.html"><button>Sobre Nós</button> </a>
-    <a href="https://api.whatsapp.com/send/?phone=5511946751592&text&type=phone_number&app_absent=0"><button style="background-color: white;">Fale Conosco</button> </a>
-    <a href="unidades.html"><button>Unidades</button> </a>
-    <ul class="nav2">
-    <p></p>
-    <a href="https://www.instagram.com/kisbert.storee?igsh=ZGJmOGkya2s5ejdv"><img style="background-color: white; border-radius: 17px;"src="./img/instagram.png" width="35" height="35">
-    <a href="https://x.com/KisbertStore?t=wJk3ho0998JRlxo3Tbc-wQ&s=09"><img style="background-color: white; border-radius: 17px;"src="./img/X.png" width="35" height="35">
+        <ul class="nav">
+            <a class="logo" href="index.html"><img src="/img/Logokisbert.jpeg" height="170px" width="170px"></a>
+            <li><a href="homens.html" class="figure1"><button>Homens</button></a></li>
+            <li><a href="mulheres.html" class="figure1"><button>Mulheres</button></a></li>
+            <li><a href="Infantil.html" class="figure1"><button>Infantil</button></a></li>
+            <li><img src="./img/carrinho-cortado.png" class="figure" width="90" height="90"></li>
+            <li><img src="./img/usuario 1 foto.png" class="figure" width="90" height="90"></li>
+        </ul>
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th?id=OIP.mUkaS32aGUjLM0aMajBEVAHaJT&w=223&h=280&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th?id=OIP.mUkaS32aGUjLM0aMajBEVAHaJT&w=223&h=280&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://th.bing.com/th?id=OIP.ehAT0F6A-bR-9ZPmcghCtQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Imagem 3">
+            </div>
+        </div>
+    </div>
+
+    <img src="./img/img roupas/bannerdesconto.jpg" class="figure" width="700" height="700">
+
+    <ul class="nav1">
+        <a href="teste.html"><img src="./img/adidasLogo.png" class="figure" width="75" height="75"></a>
+        <img src="./img/pumaLogo.png" class="figure" width="75" height="75">
+        <img src="./img/reservalogo.png" class="figure" width="75" height="75">
+        <img src="./img/nikelogo.png" class="figure" width="75" height="75">
+        <img src="./img/lacostelogo.png" class="figure" width="75" height="75">
+        <img src="./img/filalogo.png" class="figure" width="75" height="75">
     </ul>
-</footer>
-</center>
+
+    <footer>  
+        <a href="sobrenos2.html"><button>Sobre Nós</button></a>
+        <a href="https://api.whatsapp.com/send/?phone=5511946751592&text&type=phone_number&app_absent=0"><button style="background-color: white;">Fale Conosco</button></a>
+        <a href="unidades.html"><button>Unidades</button></a>
+        <ul class="nav2">
+            <p></p>
+            <a href="https://www.instagram.com/kisbert.storee?igsh=ZGJmOGkya2s5ejdv"><img style="background-color: white; border-radius: 17px;"src="./img/instagram.png" width="35" height="35"></a>
+            <a href="https://x.com/KisbertStore?t=wJk3ho0998JRlxo3Tbc-wQ&s=09"><img style="background-color: white; border-radius: 17px;"src="./img/X.png" width="35" height="35"></a>
+        </ul>
+    </footer>
+
+    <script>
+        const carousel = document.querySelector('.carousel'); // Seleciona o elemento .carousel
+        const carouselContainer = carousel.querySelector('.carousel-container');
+        const carouselItems = carousel.querySelectorAll('.carousel-item');
+        const totalItems = carouselItems.length;
+        let currentIndex = 0;
+        let interval;
+
+        // Função para avançar para o próximo slide
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }
+
+        // Função para atualizar a posição do carousel
+        function updateCarousel() {
+            const newPosition = -currentIndex * 100 + '%';
+            carouselContainer.style.transform = `translateX(${newPosition})`;
+        }
+
+        // Carrossel automático
+        function startCarousel() {
+            interval = setInterval(nextSlide, 3000); // Troca de imagem a cada 3 segundos (3000 ms)
+        }
+
+        function stopCarousel() {
+            clearInterval(interval);
+        }
+
+        // Iniciar carrossel automaticamente ao carregar a página
+        startCarousel();
+
+        // Pausar carrossel quando o mouse estiver sobre o carrossel
+        carousel.addEventListener('mouseover', stopCarousel);
+        carousel.addEventListener('mouseleave', startCarousel);
+    </script>
+    </center>
 </body>
 </html>
