@@ -43,3 +43,19 @@ const carouselContainer = document.querySelector('.carousel-container');
         // Pausar carrossel quando o mouse estiver sobre o carrossel
         carousel.addEventListener('mouseover', stopCarousel);
         carousel.addEventListener('mouseleave', startCarousel);
+        
+        
+        document.getElementById('searchInput').addEventListener('input', function() {
+            let searchValue = this.value.toLowerCase();
+            let results = document.querySelectorAll('.results li');
+            
+            results.forEach(function(item) {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(searchValue)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    

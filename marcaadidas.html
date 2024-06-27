@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja de Roupas</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    .category {
+        margin-bottom: 40px;
+    }
+    .category h2 {
+        color: #555;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item {
+        flex: 1 1 30%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .item img {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+    .item-name {
+        font-size: 18px;
+        color: #333;
+        margin: 10px 0;
+    }
+    .item-price {
+        font-size: 16px;
+        color: #888;
+        margin: 5px 0;
+    }
+    .item-size {
+        margin: 10px 0;
+    }
+    .item-size select {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .buy-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .buy-button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Loja de Roupas</h1>
+
+    <div class="category">
+        <h2>Camisetas</h2>
+        <div class="items">
+            <div class="item">
+                <img src="camiseta1.jpg" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Básica</div>
+                <div class="item-price">R$ 29,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta1">Tamanho:</label>
+                    <select id="size-camiseta1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="camiseta2.jpg" alt="Camiseta Estampada">
+                <div class="item-name">Camiseta Estampada</div>
+                <div class="item-price">R$ 39,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta2">Tamanho:</label>
+                    <select id="size-camiseta2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Calças</h2>
+        <div class="items">
+            <div class="item">
+                <img src="calca1.jpg" alt="Calça Jeans">
+                <div class="item-name">Calça Jeans</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca1">Tamanho:</label>
+                    <select id="size-calca1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="calca2.jpg" alt="Calça Moletom">
+                <div class="item-name">Calça Moletom</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-calca2">Tamanho:</label>
+                    <select id="size-calca2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Moletons</h2>
+        <div class="items">
+            <div class="item">
+                <img src="moletom1.jpg" alt="Moletom com Capuz">
+                <div class="item-name">Moletom com Capuz</div>
+                <div class="item-price">R$ 99,90</div>
+                <div class="item-size">
+                    <label for="size-moletom1">Tamanho:</label>
+                    <select id="size-moletom1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="moletom2.jpg" alt="Moletom Sem Capuz">
+                <div class="item-name">Moletom Sem Capuz</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Tênis</h2>
+        <div class="items">
+            <div class="item">
+                <img src="tenis1.jpg" alt="Tênis Casual">
+                <div class="item-name">Tênis Casual</div>
+                <div class="item-price">R$ 199,90</div>
+                <div class="item-size">
+                    <label for="size-tenis1">Tamanho:</label>
+                    <select id="size-tenis1">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="tenis2.jpg" alt="Tênis Esportivo">
+                <div class="item-name">Tênis Esportivo</div>
+                <div class="item-price">R$ 249,90</div>
+                <div class="item-size">
+                    <label for="size-tenis2">Tamanho:</label>
+                    <select id="size-tenis2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Chinelos</h2>
+        <div class="items">
+            <div class="item">
+                <img src="chinelo1.jpg" alt="Chinelo de Borracha">
+                <div class="item-name">Chinelo de Borracha</div>
+                <div class="item-price">R$ 19,90</div>
+                <div class="item-size">
+                    <label for="size-chinelo1">Tamanho:</label>
+                    <select id="size-chinelo1">
+                        <option>38

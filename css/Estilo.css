@@ -3,7 +3,7 @@
 
 
 body { 
-    background-image: url('/img/Kisbertfundo.png'); 
+    background-image: url('./img/Kisbertfundo.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -74,4 +74,31 @@ button {
     background: black;
     height: 15vh;
     
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.results {
+    list-style-type: none;
+    padding: 0;
+}
+.results li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.results li:last-child {
+    border-bottom: none;
 }
