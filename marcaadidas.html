@@ -23,6 +23,37 @@
         text-align: center;
         color: #333;
     }
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .search-box {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+    }
+    .search-box input[type="text"] {
+        width: 100%;
+        padding: 10px 40px 10px 10px;
+        font-size: 16px;
+        border: 2px solid #daa520;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+    .search-box button {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .search-box button img {
+        width: 20px;
+        height: 20px;
+    }
     .category {
         margin-bottom: 40px;
     }
@@ -86,6 +117,15 @@
 <body>
 <div class="container">
     <h1>Loja de Roupas</h1>
+
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar produtos...">
+            <button type="submit">
+                <img src="lupa.png" alt="Buscar">
+            </button>
+        </div>
+    </div>
 
     <div class="category">
         <h2>Camisetas</h2>
@@ -216,31 +256,6 @@
             </div>
             <div class="item">
                 <img src="tenis2.jpg" alt="Tênis Esportivo">
-                <div class="item-name">Tênis Esportivo</div>
-                <div class="item-price">R$ 249,90</div>
-                <div class="item-size">
-                    <label for="size-tenis2">Tamanho:</label>
-                    <select id="size-tenis2">
-                        <option>38</option>
-                        <option>39</option>
-                        <option>40</option>
-                        <option>41</option>
-                        <option>42</option>
-                    </select>
-                </div>
-                <button class="buy-button">Comprar</button>
-            </div>
-        </div>
-    </div>
+                <div class="item
 
-    <div class="category">
-        <h2>Chinelos</h2>
-        <div class="items">
-            <div class="item">
-                <img src="chinelo1.jpg" alt="Chinelo de Borracha">
-                <div class="item-name">Chinelo de Borracha</div>
-                <div class="item-price">R$ 19,90</div>
-                <div class="item-size">
-                    <label for="size-chinelo1">Tamanho:</label>
-                    <select id="size-chinelo1">
-                        <option>38
+                
