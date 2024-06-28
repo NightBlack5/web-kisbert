@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja de Roupas</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+    .search-bar input {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid gold;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+    }
+    .search-bar button {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid gold;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        background-color: gold;
+        cursor: pointer;
+    }
+    .category {
+        margin-bottom: 40px;
+    }
+    .category h2 {
+        color: #fff;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item {
+        flex: 1 1 30%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px;
+        background-color: #444;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .item img {
+        max-width: 100%;
+        max-height: 150px;
+        border-radius: 4px;
+    }
+    .item-name {
+        font-size: 18px;
+        color: #fff;
+        margin: 10px 0;
+    }
+    .item-price {
+        font-size: 16px;
+        color: #ccc;
+        margin: 5px 0;
+    }
+    .item-size {
+        margin: 10px 0;
+    }
+    .item-size select {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .buy-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .buy-button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <a class="logo" href="index.html"><img src="./img/Logokisbert.jpeg" height="130px" width="110px"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button onclick="searchItems()">
+                <img src="lupa.png" alt="Lupa" style="width: 20px; height: 20px;">
+            </button>
+        </div>
+    </div>
+    
+    <center><img src="./img/nikelogo.png" width="160px" height="150px"></center>
+
+    <div class="category">
+        <h2>Camisetas</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Camisetas/304204-full_product.jpg" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Estampada</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta1">Tamanho:</label>
+                    <select id="size-camiseta1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Camisetas/camiseta_nike_dri_fit_miller_masculino_preto_e_grafite_8217_1_dd828a69e412c0c1e240b804f02e0fd4.webp" alt="Camiseta Estampada">
+                <div class="item-name">Camiseta Nike</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta2">Tamanho:</label>
+                    <select id="size-camiseta2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Camisetas/Modelo 2.jpg.avif" alt="Camiseta Básica">
+                <div class="item-name">Camiseta nike Preta</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta3">Tamanho:</label>
+                    <select id="size-camiseta3">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Camisetas/1-3470.webp" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Cinza</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta4">Tamanho:</label>
+                    <select id="size-camiseta4">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Camisetas/modelo 11.webp" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Nike Branca </div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta5">Tamanho:</label>
+                    <select id="size-camiseta5">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Calças</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Calcas/Nike-Calc¦ºa-Nike-Sportswear-Masculina-8513-50662121-1-zoom.webp" alt="Calça Jeans">
+                <div class="item-name">Calça Nike</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca1">Tamanho:</label>
+                    <select id="size-calca1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Calcas/calca nike 2.jpeg" alt="Calça Moletom">
+                <div class="item-name">Calça Nike</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-calca2">Tamanho:</label>
+                    <select id="size-calca2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Calcas/calca nike 1.jpeg" alt="Calça Jeans">
+                <div class="item-name">Calça Nike</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca3">Tamanho:</label>
+                    <select id="size-calca3">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Calcas/Calca nike 1.1.jpeg" alt="Calça Jeans">
+                <div class="item-name">Calça Nike</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca4">Tamanho:</label>
+                    <select id="size-calca4">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Calcas/Nike-Sportswear-Calc¦ºa-Nike-Sportswear-Jogger-Lnd-Track-Preta-0864-7406109-1-zoom.webp">
+                <div class="item-name">Calça Nike</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca5">Tamanho:</label>
+                    <select id="size-calca5">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Moletons</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Moletons/moletom-sb-cw4383-063-643e7f1ded405.jpg" alt="Moletom com Capuz">
+                <div class="item-name">Moletom nike Estampado</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom1">Tamanho:</label>
+                    <select id="size-moletom1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Moletons/Moletom Nike Masculino Hoodie Sportswear Club Fleece Cinza Mescla 1.1.jpeg">
+                <div class="item-name">Moletom Cinza</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Moletons/Moletom Nike Masculina Sportswear Tribute Preta.webp" alt="Moletom Sem Capuz">
+                <div class="item-name">Moletom Preto Ziper</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom3">Tamanho:</label>
+                    <select id="size-moletom3">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Moletons/jt3lqhdoh2welsufpu1vdfzvtpgq5imndurr_1395x1980.webp">
+                <div class="item-name">Moletom Nike preto</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom4">Tamanho:</label>
+                    <select id="size-moletom4">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Moletons/1_094874_0019.webp" alt="Moletom Sem Capuz">
+                <div class="item-name">Moletom verde</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Chinelos</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Chinelos/Chinelo Nike Masculino Slide Victori One Branco e Preto 1.jpeg" alt="Moletom Sem Capuz">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 150,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Chinelos/chinelo-nike-victori-one-masculino-5a098399be5a72332b5cc62b46783666-1.jpg" alt="Moletom Sem Capuz">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 100,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Chinelos/chinelo-nike-kawa-shower-832528001-7f5ee4ede70d487bb7c17e44544f3934.jpg" alt="Moletom Sem Capuz">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 150,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Chinelos/Chinelo Nike Masculino Slide Victori One Branco e Preto 1.1.jpeg" alt="Moletom Sem Capuz">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 100,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Chinelos/captura-de-tela-2023-01-14-as-13-27-591-8dc77678dcf2e53fee16737138461176-640-0.png" alt="Moletom Sem Capuz">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 150,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Tênis</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Tenis/Te¦énis Nike Masculino Downshifter 12 Preto1.1.jpeg" alt="Moletom Sem Capuz">
+                <div class="item-name">Tênis</div>
+                <div class="item-price">R$ 200,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Tenis/Te¦énis Nike Masculino Downshifter 12 Preto 1.jpeg" alt="Moletom">
+                <div class="item-name">Tênis</div>
+                <div class="item-price">R$ 350,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Tenis/Te¦énis Nike Masculino Court Vision Mid Next Nature Black Branco 2.jpeg" alt="Moletom">
+                <div class="item-name">Tênis</div>
+                <div class="item-price">R$ 350,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Tenis/Te¦énis Nike Masculino Court Vision Mid Next Nature Black Branco 2.1.jpeg" alt="Moletom">
+                <div class="item-name">Tênis</div>
+                <div class="item-price">R$ 350,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Masculino/Nike/Tenis/Te¦énis Nike Masculino Couro Court Royale 2 Low Preto3.jpeg" alt="Moletom Sem Capuz">
+                <div class="item-name">Tênis</div>
+                <div class="item-price">R$ 350,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
