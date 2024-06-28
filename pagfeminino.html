@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roupa Femininas</title>
+<link rel="icon" href="./img/Logokisbert.jpeg" type="image/x-icon">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        color: #fff;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+    .search-bar input {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid gold;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+    }
+    .search-bar button {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid gold;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        background-color: gold;
+        cursor: pointer;
+    }
+    .category {
+        margin-bottom: 40px;
+    }
+    .category h2 {
+        color: #fff;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item {
+        flex: 1 1 30%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px;
+        background-color: #444;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .item img {
+        max-width: 100%;
+        max-height: 150px;
+        border-radius: 4px;
+    }
+    .item-name {
+        font-size: 18px;
+        color: #fff;
+        margin: 10px 0;
+    }
+    .item-price {
+        font-size: 16px;
+        color: #ccc;
+        margin: 5px 0;
+    }
+    .item-size {
+        margin: 10px 0;
+    }
+    .item-size select {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .buy-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .buy-button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <a class="logo" href="index.html"><img src="./img/Logokisbert.jpeg" height="130px" width="110px"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar produtos...">
+            <button onclick="searchItems()">
+                <img src="lupa.png" alt="Lupa" style="width: 20px; height: 20px;">
+            </button>
+        </div>
+    </div>
+    
+    
+
+    <div class="category">
+        <h2>Camisetas</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Camisetas/feminino-camiseta-camiseta-adidas-originals-trefoil--p-1594927292570.jpg" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Adidas</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta1">Tamanho:</label>
+                    <select id="size-camiseta1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Camisetas/camiseta_nike_feminina_sportswear_essential_preta_14323_1_34a86e840f2a4aadd7cb5def4dacc137.webp" alt="">
+                <div class="item-name">Camiseta Nike</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta2">Tamanho:</label>
+                    <select id="size-camiseta2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Puma/Camisetas/2I3-2691-006_zoom1.webp" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Puma</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta3">Tamanho:</label>
+                    <select id="size-camiseta3">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Lacoste/Camisetas/adidas-Originals-Camiseta-adidas-Originals-Trefoil-Preta-8813-3321737-1-zoom.webp" alt="Camiseta Básica">
+                <div class="item-name">Camiseta adidas</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta4">Tamanho:</label>
+                    <select id="size-camiseta4">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Reserva/Camisetas/0080582567_04.webp" alt="Camiseta Básica">
+                <div class="item-name">Camiseta Reserva </div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-camiseta5">Tamanho:</label>
+                    <select id="size-camiseta5">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Calças</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Calc¦ºas/342661.webp">
+                <div class="item-name">Calça adidas</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca1">Tamanho:</label>
+                    <select id="size-calca1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Lacoste/Calcas/calca-de-moletom-lacoste-marinho_227355-0.webp" alt="Calça Moletom">
+                <div class="item-name">Calça Lacoste</div>
+                <div class="item-price">R$ 59,90</div>
+                <div class="item-size">
+                    <label for="size-calca2">Tamanho:</label>
+                    <select id="size-calca2">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Calcas/calca_nike_sportswear_essential_woven_feminina_10903_1_a7cbbdc986110df05852ddc908744ed7.webp" alt="Calça Jeans">
+                <div class="item-name">Calça Nike</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca3">Tamanho:</label>
+                    <select id="size-calca3">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Puma/Calcas/NWG-0217-006_zoom1.webp" alt="Calça Jeans">
+                <div class="item-name">Calça puma</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca4">Tamanho:</label>
+                    <select id="size-calca4">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Puma/Calcas/NWG-1241-006_zoom1.webp">
+                <div class="item-name">Calça puma</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-calca5">Tamanho:</label>
+                    <select id="size-calca5">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Moletons</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Moletons/Screenshot_20240612-100033-933.png" alt="Moletom com Capuz">
+                <div class="item-name">Moletom nike</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom1">Tamanho:</label>
+                    <select id="size-moletom1">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Puma/Moletons/download.jpg">
+                <div class="item-name">Moletom Puma</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Moletons/Blusa_Moletom_Capuz_Essentials_Relaxed_Logo_Preto_GM5514_01_laydown.jpg" alt="Moletom Sem Capuz">
+                <div class="item-name">Moletom Adidas</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom3">Tamanho:</label>
+                    <select id="size-moletom3">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Moletons/Moletom_com_Capuz_adidas_Z.N.E._Full-Zip_Rosa_IS3939_25_model.jpg">
+                <div class="item-name">Moletom Adidas</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom4">Tamanho:</label>
+                    <select id="size-moletom4">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Lacoste/Moletons/66d986cd99d9d9ab2f585fd2615b41f4.jpg" alt="Moletom Sem Capuz">
+                <div class="item-name">Moletom Lacoste</div>
+                <div class="item-price">R$ 89,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Chinelos</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Chinelos/8da8d1c308b033de294fd82b831cdeb5.jpg">
+                <div class="item-name">Chinelo adidas</div>
+                <div class="item-price">R$ 150,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Chinelos/CHINELO ADILETTE LITE 1.avif">
+                <div class="item-name">Chinelo Adidas</div>
+                <div class="item-price">R$ 100,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Chinelos/0754220002-C.webp">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 150,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Chinelos/-637ccdf99ca9c.jpg">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 100,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Chinelos/Nike-Chinelo-Slide-Nike-Infantil-Kawa-Rosa-8724-1056547-1-zoom.webp" alt="Moletom Sem Capuz">
+                <div class="item-name">Chinelo Nike</div>
+                <div class="item-price">R$ 100,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Tênis</h2>
+        <div class="items">
+            <div class="item">
+                <img src="MODELOS/Feminino/Nike/Tenis/5_20230610_21582-zvdbpmm85v.webp" alt="Moletom Sem Capuz">
+                <div class="item-name">Tênis Nike</div>
+                <div class="item-price">R$ 200,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Adidas/Tenis/e54e190909f02293a08dda795f958b1a-1.jpg" alt="Moletom">
+                <div class="item-name">Tênis Adidas</div>
+                <div class="item-price">R$ 350,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Puma/Tenis/Screenshot_20240612-103349-327.png" alt="Moletom">
+                <div class="item-name">Tênis puma</div>
+                <div class="item-price">R$ 350,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Lacoste/Tenis/259941080489c491488.jpg.webp" alt="Moletom">
+                <div class="item-name">Tênis lacoste</div>
+                <div class="item-price">R$ 250,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+            <div class="item">
+                <img src="MODELOS/Feminino/Puma/Tenis/Screenshot_20240612-103033-764.png">
+                <div class="item-name">Tênis puma</div>
+                <div class="item-price">R$ 250,90</div>
+                <div class="item-size">
+                    <label for="size-moletom2">Tamanho:</label>
+                    <select id="size-moletom2">
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                    </select>
+                </div>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+    </div>

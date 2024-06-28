@@ -6,15 +6,17 @@
     <title>Kisbert Store</title>
     <link rel="stylesheet" href="./css/Estilo.css">
     <link rel="icon" href="./img/Logokisbert.jpeg" type="image/x-icon">
-
+<p></p>
     <style>
         /* Estilos opcionais para o carrossel */
         .carousel {
-            width: 600px;
+            width: 1250px;
+            height: 650px;
             overflow: hidden;
             position: relative;
             margin: auto;
         }
+
 
         .carousel-container {
             display: flex;
@@ -27,8 +29,8 @@
         }
 
         .carousel img {
-            width: 900px;
-            height: 700px;
+            width: 1000px;
+            height: 600px;
         }
 
         .carousel-controls {
@@ -52,37 +54,33 @@
 <body>
     <center>
     <header>
-        <div class="container">
-            <h2>Exemplo de Display com Buscador</h2>
-            <input type="text" id="searchInput" placeholder="Digite sua busca...">
-            <ul class="results" id="searchResults">
-                <li>Homens</li>
-                <li>Resultado 2</li>
-                <li>Resultado 3</li>
-                <li>Resultado 4</li>
-                <li>Resultado 5</li>
-            </ul>
-        </div>
+        
         <ul class="nav">
-            <a class="logo" href="index.html"><img src="./img/Logokisbert.jpeg" height="110px" width="110px"></a>
-            <li><a href="homens.html" class="figure1"><button>Homens</button></a></li>
-            <li><a href="mulheres.html" class="figure1"><button>Mulheres</button></a></li>
-            <li><a href="Infantil.html" class="figure1"><button>Infantil</button></a></li>
+            <a class="logo" href="index.html"><img src="./img/Logokisbert.jpeg" height="100px" width="100px"></a>
+            <li><a href="pagmasculino.html" class="figure1"><button>Homens</button></a></li>
+            <li><a href="pagfeminino.html" class="figure1"><button>Mulheres</button></a></li>
+            <li><a href="paginfantil.html" class="figure1"><button>Infantil</button></a></li>
+            
+            
+            <li><div class="container">Busca<input type="text" id="searchInput" placeholder="Digite sua busca...">
+            <ul class="results" id="searchResults"></ul>
             <li><img src="./img/carrinho-cortado.png" class="figure" width="90" height="90"></li>
-            <li><a href="login.html"><img src="./img/usuario 1 foto.png" class="figure" width="80" height="80"></a></li>
+            <li><a href="login.html"><img src="./img/usuario 1 foto.png" class="figure" width="70" height="70"></a></li>
+            </ul>
+        </div></li>
         </ul>
     </header>
 
     <div class="carousel">
         <div class="carousel-container">
             <div class="carousel-item">
-                <img src="./img/img roupas/bannerdesconto.jpg" alt="Imagem 1">
+               <img src="./img/img roupas/bannerdesconto.jpg" class="figure" width="500" height="400" alt="Imagem 1">
             </div>
             <div class="carousel-item">
                 <img src="./img/img roupas/stores.png" alt="Imagem 2">
             </div>
             <div class="carousel-item">
-                <img src="https://th.bing.com/th?id=OIP.ehAT0F6A-bR-9ZPmcghCtQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Imagem 3">
+                <img src="./img/img roupas/gabite.png" alt="Imagem 3">
             </div>
         </div>
     </div>
@@ -93,20 +91,38 @@
         <a href="pagpuma.html"><img src="./img/pumaLogo.png" class="figure" width="75" height="75"></a>
         <a href="pagreserva.html"><img src="./img/reservalogo.png" class="figure" width="75" height="75"></a>
         <a href="pagnike.html"><img src="./img/nikelogo.png" class="figure" width="75" height="75"></a>
-        <a href="paglacoste.html"><img src="./img/lacostelogo.png" class="figure" width="75" height="75"></a>
-        <a href=""><img src="./img/filalogo.png" class="figure" width="75" height="75"></a>
+        <a href="paglacoste.html"><img src="./img/lacostelogo.png" class="figure" width="75" height="75"></a>   
     </ul>
+<p></p>
+<footer style="color: white;">
+    <ul class="nav2">
+    <li>
+    <p>&copy; 2024 Todos os direitos reservados. Kisbert.</p>
+    <p>Endereço: Rua Principal, 123 - Cidade - Estado - CEP</p>
+    <p>Telefone: (11) 1234-5678 | Email: Kisbert@empresa.com</p>
+    <p>Siga-nos nas redes sociais: 
+    </li>
+    <div>
+        <a href="https://api.whatsapp.com/send/?phone=5511946751592&text&type=phone_number&app_absent=0"><button style="background-color: white;">Contato</button></a>
+    </a>
+        <a href="sobrenos2.html"><button>Sobre Nós</button>
+    </a>
+        <a href="https://www.instagram.com/kisbert.storee?igsh=ZGJmOGkya2s5ejdv">
+            <img style="background-color: white; border-radius: 17px; margin-right: 10px;" src="./img/instagram.png" width="35" height="35">
+        </a>
+        <a href="https://x.com/KisbertStore?t=wJk3ho0998JRlxo3Tbc-wQ&s=09">
+            <img style="background-color: white; border-radius: 17px; margin-right: 10px;" src="./img/X.png" width="35" height="35">
+        </a>
+        
+        
+    </div>
+        
 
-    <footer>  
-        <a href="sobrenos2.html"><button>Sobre Nós</button></a>
-        <a href="https://api.whatsapp.com/send/?phone=5511946751592&text&type=phone_number&app_absent=0"><button style="background-color: white;">Fale Conosco</button></a>
-        <a href="unidades.html"><button>Unidades</button></a>
-        <ul class="nav2">
-            <p></p>
-            <a href="https://www.instagram.com/kisbert.storee?igsh=ZGJmOGkya2s5ejdv"><img style="background-color: white; border-radius: 17px;"src="./img/instagram.png" width="35" height="35"></a>
-            <a href="https://x.com/KisbertStore?t=wJk3ho0998JRlxo3Tbc-wQ&s=09"><img style="background-color: white; border-radius: 17px;"src="./img/X.png" width="35" height="35"></a>
-        </ul>
-    </footer>
+    
+    
+    </ul>
+    
+</footer>
 
     <script>
         const carousel = document.querySelector('.carousel'); // Seleciona o elemento .carousel
@@ -125,7 +141,7 @@
         // Função para atualizar a posição do carousel
         function updateCarousel() {
             const newPosition = -currentIndex * 100 + '%';
-            carouselContainer.style.transform = `translateX(${newPosition})`;
+            carouselContainer.style.transform = translateX(${newPosition});
         }
 
         // Carrossel automático
